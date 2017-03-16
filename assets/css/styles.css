@@ -71,13 +71,18 @@ ol {
     color: #ffc600;
 }
 .title_section {
-	border-right: 2px solid #000;
+	border-right: 3px solid #000;
     color: #000;
     line-height: 2;
+    margin-right: 20px;
     padding-right: 14px;
     text-transform: uppercase;
 }
-
+.title_section span {
+	font-family: 'Open Sans',sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+}
 h1 {
     font-family: 'Open Sans',sans-serif;
     font-weight: 900;
@@ -137,7 +142,7 @@ nav.navbar.nav-body.navbar-default.affix-top {
 }
 nav.navbar.nav-body.navbar-default.affix {
     background-color: #fff;
-    border-bottom: 1px solid #333;
+    border-bottom: 1px solid rgba(51, 51, 51, 0.41);
     border-radius: 0;
     font-weight: 500;
     box-shadow: 0 2px 2px #333;
@@ -160,11 +165,6 @@ nav.navbar.nav-body.navbar-default.affix {
     padding-bottom: 10px;
     text-transform: uppercase;
 }
-.main_about_area span {
-	font-family: 'Open Sans',sans-serif;
-    font-weight: 600;
-    font-size: 20px;
-}
 .desc_about {
 	padding-top: 30px;
 }
@@ -177,6 +177,74 @@ nav.navbar.nav-body.navbar-default.affix {
 .desc_about .btn-yellow {
 	padding: 10px 100px;
 }
+
+/* Service
+======================= */
+section#service.service {
+    padding-bottom: 80px;
+}
+.main_service_area {
+    padding: 90px 0px 40px;
+}
+.box_service {
+	border: 2px solid #ffc501;
+    color: #000;
+    padding: 60px 20px;
+}
+.box_service span {
+    font-weight: 500;
+	background: #ffc501;
+    color: #000;
+    padding: 10px;
+    border-radius: 50%;
+}
+.main_service_area .col-md-4:nth-child(1) .box_service span {
+	padding-left: 13px;
+}
+.main_service_area .col-md-4:nth-child(2) .box_service span {
+	padding: 10px 15px;
+}
+.box_service p:nth-child(3){
+    color: #646464;
+}
+.box_service .title_item {
+	font-family: 'Open Sans',sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    padding: 16px 0px;
+    margin: 0;
+    text-transform: uppercase;
+}
+.box_service:hover {
+    background: #ffc501;
+	border-color: #000;
+    transition: all 0.3s ease-in 0s;
+}
+.box_service:hover span {
+	background: #000;
+    color: #fff;
+    transition: all 0.3s ease-in 0s;
+}
+.box_service:hover p:nth-child(2) {
+	color: #fff;
+}
+.box_service:hover p:nth-child(3) {
+	color: #000;
+}
+
+
+/* Skill
+======================= */
+.skill {
+	background: #ffc501;
+}
+
+
+
+
+
+
+
 
 
 
