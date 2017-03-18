@@ -169,6 +169,7 @@ nav.navbar.nav-body.navbar-default.affix {
     -ms-transition: all 0.4s ease 0s;
     transition: all 0.4s ease 0s;
 }
+
 /* About
 ======================= */
 .main_about_area {
@@ -351,6 +352,51 @@ section#service.service {
     transition: all 0.3s ease-in-out;
 }
 
+
+/* Testimonial
+======================= */
+#testi-carousel {
+	padding-top: 70px;
+}
+#testi-carousel span.fa {
+	font-size: 50px;    
+}
+#testi-carousel h4 {
+    font-family: 'Open Sans',sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+    color: #000;
+	padding-top: 30px;
+}
+#testi-carousel p {
+    font-weight: 400;
+    font-size: 14px;
+	color: #000;
+}
+#testi-carousel .text-white {
+    font-weight: 500;
+	font-size: 20px;
+    padding-bottom: 20px;
+    color: #fff;
+}
+.owl-theme .owl-controls .owl-page span {
+    display: block;
+    width: 15px;
+    height: 15px;
+    margin: 5px 7px;
+    filter: Alpha(Opacity=50);
+    opacity: 0.5;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+    background: #fff;
+    border: 2px solid #fff;
+}
+.owl-theme .owl-controls .owl-page.active span, .owl-theme .owl-controls.clickable .owl-page:hover span {
+    filter: Alpha(Opacity=100);
+    opacity: 1;
+    color: #eebf3f;
+}
 
 
 
