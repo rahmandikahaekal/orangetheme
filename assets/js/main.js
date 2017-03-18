@@ -1,3 +1,6 @@
+//======================
+//  Progress Bar
+//======================
 $(function () { 
   $('[data-toggle="tooltip"]').tooltip({trigger: 'manual'}).tooltip('show');
 });  
@@ -12,12 +15,17 @@ $(function () {
  //  }  
 // });
 
+//======================
+//  Isotope
+//======================
 $('.main_work').isotope({
     itemSelector: '.item',
     layoutMode: 'fitRows'
 });
 
-// Isotope click function
+//======================
+//  Activation Isotope
+//======================
 $('.work_nav ul li').click(function() {
     $('.work_nav ul li').removeClass('active');
     $(this).addClass('active');
@@ -29,17 +37,39 @@ $('.work_nav ul li').click(function() {
     return false;
 });
 
-// Magnific Popup
-    $('.portfolio-popup').magnificPopup({
-        type: 'image',
-          gallery: {
-              enabled: true
-          },
-        zoom: {
-            enabled: true,
-            duration: 300, // don't foget to change the duration also in CSS
-            opener: function(element) {
-              return element.find('img');
-            }
+//======================
+//  Magnific Popup
+//======================
+$('.portfolio-popup').magnificPopup({
+    type: 'image',
+      gallery: {
+          enabled: true
+      },
+    zoom: {
+        enabled: true,
+        duration: 300, // don't foget to change the duration also in CSS
+        opener: function(element) {
+          return element.find('img');
         }
+    }
+});
+
+
+//======================
+//  OWL CAROUSEL
+//======================
+$(document).ready(function() {
+    
+    $("#testi-carousel").owlCarousel({
+        //Most important owl features
+        items: 1,
+        itemsCustom: false,
+        itemsDesktop: [1199,1],
+        itemsDesktopSmall: [980,1],
+        itemsTablet: [768,1],
+        itemsTabletSmall: false,
+        itemsMobile: [479,1],
+        singleItem: false,
+        startDragging: true
     });
+});

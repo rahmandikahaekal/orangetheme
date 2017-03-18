@@ -68,7 +68,7 @@ ol {
     padding: 0;
 }
 .bg-yellow {
-    background: #ffc501;
+    	background: #ffc501;
 }
 .text-yellow {
     color: #ffc600;
@@ -326,6 +326,32 @@ section#service.service {
 .main_work .item {
 	padding-bottom: 25px;
 }
+.item .desc_work {
+	position: absolute;
+    top: 3%;
+    right: 8%;
+    padding: 120px 90px;
+    opacity: 0;
+    background-color: rgba(255, 255, 255, 0.74);
+    -webkit-transition-duration: 0.7s;
+    -moz-transition-duration: 0.7s;
+    -ms-transition-duration: 0.7s;
+    transition-duration: 0.7s;
+}
+.item .desc_work h4 {
+	font-family: 'Montserrat',sans-serif;
+    font-weight: 600;
+    font-size: 30px;
+}
+.item .desc_work:hover {
+	opacity: 1;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+
 
 
 @media (min-width: 1200px)
