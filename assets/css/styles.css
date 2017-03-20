@@ -57,10 +57,15 @@ a span {
 .btn-yellow {
     font-family: 'Open Sans',sans-serif;
     font-weight: 700;
-	background: #ffc600;
+	background: #fec600;
     color: #000;
     padding: 10px 30px;
     text-transform: uppercase;
+}
+.btn-yellow:hover {
+	background: #000;
+    color: #fec600;
+    transition: all 0.7s ease-in-out 0s;
 }
 ul, 
 ol {
@@ -68,10 +73,10 @@ ol {
     padding: 0;
 }
 .bg-yellow {
-    	background: #ffc501;
+    	background: #fec600;
 }
 .text-yellow {
-    color: #ffc600;
+    color: #fec600;
 }
 .text-white {
     color: #fff;
@@ -139,16 +144,16 @@ nav.navbar.nav-body.navbar-default.affix-top {
     margin-bottom: 0px;
 }
 .navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover {
-    color: #ffc501;
+    color: #fec600;
     background-color: transparent;
 }
 .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
-    color: #ffc501;
+    color: #fec600;
     background-color: transparent;
 }
 .navbar-default li:hover:after,
 .navbar-default li.active:after{
-    border-bottom: 3px solid #eebf3f;
+    border-bottom: 3px solid #fec600;
     content: " ";
     display: block;
     position: relative;
@@ -238,7 +243,7 @@ section#service.service {
     text-transform: uppercase;
 }
 .box_service:hover {
-    background: #ffc501;
+    background: #fec600;
 	border-color: #000;
     -webkit-transition: all 0.3s ease-in 0s;
     -moz-transition: all 0.3s ease-in 0s;
@@ -298,6 +303,9 @@ section#service.service {
 
 /* Portfolio
 ======================= */
+.portfolio {
+    height: auto;
+}
 .work_nav {
 	padding-top: 70px;
     padding-bottom: 30px;
@@ -313,11 +321,11 @@ section#service.service {
 }
 .work_nav ul li:hover,
 .work_nav ul li.active {
-    color: #eebf3f;
+    color: #fec600;
 }
 .work_nav li:hover:after,
 .work_nav li.active:after {
-    border-bottom: 3px solid #eebf3f;
+    border-bottom: 3px solid #fec600;
     content: " ";
     display: block;
     margin-right: -5px;
@@ -395,9 +403,107 @@ section#service.service {
 .owl-theme .owl-controls .owl-page.active span, .owl-theme .owl-controls.clickable .owl-page:hover span {
     filter: Alpha(Opacity=100);
     opacity: 1;
-    color: #eebf3f;
+    color: #fec600;
 }
 
+
+/* Contact
+======================= */
+.main_contact_area{
+	margin-top: 90px;
+    height: 170px;
+}
+.icon_area {
+	padding: 0px 120px 25px;
+}
+.icon_item {
+    padding-bottom: 20px;
+    border-bottom: 2px solid #fec600;
+}
+.icon_item span {
+    color: #fec600;
+    font-size: 30px;
+}
+.main_contact_form  .form{
+    width: 100%;
+    padding: 15px;
+    background:#f8f8f8;
+    border: 1.8px solid rgba(0, 0, 0, 0.89);
+    margin-bottom:25px;
+    color:#727272 !important;
+    font-size:13px;
+    -webkit-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    transition: all 0.4s;
+}
+.main_contact_form  .form:hover{
+    border: 1px solid #f1c40c;
+  }
+.main_contact_form .form:focus{
+    color: white;
+    outline: none;
+    border:1px solid #f1c40c;
+}
+.main_contact_form .textarea{
+    background-color: transparent;
+    height: 200px;
+    max-height: 200px;
+    max-width: 100%;
+}
+.main_contact_form #contact-us input {
+    background-color: transparent;
+    position: relative;
+}
+.btn_form_area {
+	padding-top: 60px;
+}
+.btn_form_area a {
+    font-weight: 600;
+    font-size: 20px;
+	padding: 10px 100px;
+}
+
+#map {
+	height: 300px;
+    width: 100%;
+}
+
+.footer {
+    font-weight: 500;
+	background: #000;
+    color: #fff;
+}
+.main_footer_area {
+	padding: 70px 0px;
+}
+.main_footer_area img,
+.main_footer_area ul li{
+	display: inline-block;
+}
+.main_footer_area ul {
+	padding-top: 20px
+}
+.main_footer_area ul li{
+	background: #f1c40c;
+    border-radius: 50%;
+    margin: 0px 5px;
+}
+.main_footer_area ul li i {
+    font-size: 20px;
+    color: #000;
+    padding: 12px 14px;
+}
+.main_footer ul li:nth-child(1) i {
+    padding: 30px 14px;
+}
+.main_footer_area ul li:nth-child(3) i {
+    padding: 12px 17px
+}
+.main_footer_area ul li:hover i {
+    background: #000;
+    color: #f1c40c;
+    transition: all 0.3s ease-in-out 0s;
+}
 
 
 @media (min-width: 1200px)
